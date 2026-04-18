@@ -1,8 +1,13 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { Search, Menu, X } from "lucide-react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Search, Menu, X, LogOut, ShieldCheck, User as UserIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import logo from "@/assets/logo-pemkot.png";
+import { useAuth } from "@/hooks/useAuth";
+import {
+  DropdownMenu, DropdownMenuContent, DropdownMenuItem,
+  DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const nav = [
   { to: "/", label: "Beranda" },
@@ -16,6 +21,8 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const onHero = pathname === "/";
+  const { user, role, signOut } = useAuth();
+  const navigate = useNavigate();
 
   return (
     <header
@@ -65,9 +72,36 @@ export const Header = () => {
           >
             <Search className="h-5 w-5" />
           </button>
-          <Button variant="hero" size="default" className="hidden sm:inline-flex">
-            Masuk
-          </Button>
+          {user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant={onHero ? "glass" : "outline"} size="default" className="hidden sm:inline-flex">
+                  <UserIcon /> {user.email?.split("@")[0]}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56 bg-popover">
+                <DropdownMenuLabel className="text-xs">
+                  {user.email}
+                  {role && <div className="text-[10px] uppercase tracking-wider text-secondary font-bold mt-0.5">{role}</div>}
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={() => navigate("/pengajuan")}>Pengajuan Saya</DropdownMenuItem>
+                {role === "admin" && (
+                  <DropdownMenuItem onClick={() => navigate("/admin")}>
+                    <ShieldCheck className="h-4 w-4 mr-2" /> Dashboard Admin
+                  </DropdownMenuItem>
+                )}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={() => signOut()}>
+                  <LogOut className="h-4 w-4 mr-2" /> Keluar
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <Button variant="hero" size="default" className="hidden sm:inline-flex" onClick={() => navigate("/auth")}>
+              Masuk
+            </Button>
+          )}
           <button
             aria-label="Menu"
             onClick={() => setOpen(!open)}
