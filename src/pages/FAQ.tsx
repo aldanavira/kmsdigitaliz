@@ -2,10 +2,10 @@ import { Layout, PageHeader } from "@/components/site/Layout";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Apa itu kerja sama daerah?", a: "Kerja sama daerah adalah kesepakatan antara Pemerintah Kota Yogyakarta dengan pihak lain (pemerintah daerah lain, swasta, perguruan tinggi, atau lembaga) untuk mencapai tujuan bersama dalam pembangunan daerah." },
-  { q: "Bagaimana cara mengajukan kerja sama dengan Pemkot Yogyakarta?", a: "Ajukan melalui menu Pengajuan dengan melengkapi formulir online, melampirkan profil instansi, proposal kerja sama, dan dokumen pendukung lainnya. Tim kami akan menindaklanjuti dalam 5 hari kerja." },
+  { q: "Apa itu kerja sama daerah?", a: "Kerja sama daerah adalah kesepakatan antara Pemerintah Kabupaten Tanah Laut dengan pihak lain (pemerintah daerah lain, swasta, perguruan tinggi, atau lembaga) untuk mencapai tujuan bersama dalam pembangunan daerah." },
+  { q: "Bagaimana cara mengajukan kerja sama dengan Pemkab Tanah Laut?", a: "Ajukan melalui menu Pengajuan dengan melengkapi formulir online, melampirkan profil instansi, proposal kerja sama, dan dokumen pendukung lainnya. Tim kami akan menindaklanjuti dalam 5 hari kerja." },
   { q: "Berapa lama proses pengajuan kerja sama?", a: "Proses verifikasi awal 5 hari kerja. Total proses hingga penandatanganan MoU rata-rata 30–45 hari kerja, tergantung kompleksitas dan jenis kerja sama." },
-  { q: "Apakah ada biaya pengajuan?", a: "Tidak ada biaya untuk proses pengajuan kerja sama daerah. Layanan ini gratis sebagai bagian dari pelayanan publik Pemkot Yogyakarta." },
+  { q: "Apakah ada biaya pengajuan?", a: "Tidak ada biaya untuk proses pengajuan kerja sama daerah. Layanan ini gratis sebagai bagian dari pelayanan publik Pemkab Tanah Laut." },
   { q: "Siapa yang berhak mengajukan kerja sama?", a: "Pemerintah daerah lain, instansi pemerintah pusat, BUMN/BUMD, perusahaan swasta berbadan hukum, perguruan tinggi terakreditasi, dan lembaga/komunitas resmi." },
   { q: "Bagaimana memantau status pengajuan saya?", a: "Setelah login, Anda dapat memantau status pengajuan secara real-time melalui dashboard pemohon di akun Anda." },
 ];

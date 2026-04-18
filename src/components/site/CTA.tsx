@@ -10,7 +10,7 @@ export const CTA = () => (
         <div className="relative grid md:grid-cols-[1fr_auto] gap-8 items-center text-primary-foreground">
           <div>
             <h2 className="font-display text-3xl md:text-5xl font-extrabold text-balance">
-              Siap memulai kerja sama dengan Pemkot Yogyakarta?
+              Siap memulai kerja sama dengan Pemkab Tanah Laut?
             </h2>
             <p className="mt-4 opacity-90 max-w-xl">
               Ajukan permohonan kerja sama daerah Anda secara online — proses transparan, terdokumentasi, dan terpantau setiap tahapnya.

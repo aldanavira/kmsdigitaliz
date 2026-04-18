@@ -4,7 +4,7 @@ import { Calendar, ArrowRight } from "lucide-react";
 const news = [
   {
     tag: "Kerja Sama",
-    title: "Pemkot Yogyakarta Jalin Kerja Sama Smart City dengan Telkom",
+    title: "Pemkab Tanah Laut Jalin Kerja Sama Smart City dengan Telkom",
     excerpt: "Penandatanganan MoU untuk pengembangan infrastruktur digital kota cerdas.",
     date: "12 Apr 2026",
     img: "linear-gradient(135deg,hsl(152,65%,32%),hsl(150,70%,42%))",
@@ -19,7 +19,7 @@ const news = [
   {
     tag: "Sosialisasi",
     title: "Workshop Penguatan Kerja Sama Luar Negeri",
-    excerpt: "Diikuti 15 OPD Pemkot Yogyakarta untuk mendorong sister-city.",
+    excerpt: "Diikuti 15 OPD Pemkab Tanah Laut untuk mendorong sister-city.",
     date: "01 Apr 2026",
     img: "linear-gradient(135deg,hsl(156,70%,22%),hsl(152,65%,32%))",
   },

@@ -25,11 +25,11 @@ export const Header = () => {
     >
       <div className="container flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Logo Pemkot Yogyakarta" className="h-12 w-12 object-contain transition-transform group-hover:scale-110" width={48} height={48} />
+          <img src={logo} alt="Logo Pemkab Tanah Laut" className="h-12 w-12 object-contain transition-transform group-hover:scale-110" width={48} height={48} />
           <div className={`leading-tight ${onHero ? "text-primary-foreground" : "text-primary"}`}>
             <div className="font-display font-extrabold text-sm">BAGIAN PEREKONOMIAN</div>
             <div className="font-display font-extrabold text-sm">DAN KERJA SAMA</div>
-            <div className="text-[10px] opacity-80 tracking-widest">KOTA YOGYAKARTA</div>
+            <div className="text-[10px] opacity-80 tracking-widest">KABUPATEN TANAH LAUT</div>
           </div>
         </Link>
 

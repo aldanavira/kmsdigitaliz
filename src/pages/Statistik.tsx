@@ -21,7 +21,7 @@ const Statistik = () => (
     <PageHeader
       eyebrow="Data Terkini"
       title="Statistik Kerja Sama Daerah"
-      description="Visualisasi capaian kerja sama daerah Pemerintah Kota Yogyakarta."
+      description="Visualisasi capaian kerja sama daerah Pemerintah Kabupaten Tanah Laut."
     />
 
     <section className="container py-16">
