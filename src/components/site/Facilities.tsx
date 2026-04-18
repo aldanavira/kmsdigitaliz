@@ -14,7 +14,7 @@ const items = [
     icon: BookOpen,
     title: "Pengetahuan",
     sub: "Kerja Sama Daerah",
-    desc: "Akses regulasi, panduan, dan referensi kerja sama daerah Pemkot Yogyakarta.",
+    desc: "Akses regulasi, panduan, dan referensi kerja sama daerah Pemkab Tanah Laut.",
     to: "/pengetahuan",
   },
   {

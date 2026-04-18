@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 
 const docs = [
   { cat: "Regulasi", title: "Permendagri No. 22 Tahun 2020 tentang Tata Cara Kerja Sama Daerah", year: 2020 },
-  { cat: "Regulasi", title: "Perwal Yogyakarta No. 14 Tahun 2021 tentang Pedoman Kerja Sama Daerah", year: 2021 },
-  { cat: "Panduan", title: "Buku Panduan Pengajuan Kerja Sama Daerah Pemkot Yogyakarta", year: 2024 },
+  { cat: "Regulasi", title: "Perwal Tanah Laut No. 14 Tahun 2021 tentang Pedoman Kerja Sama Daerah", year: 2021 },
+  { cat: "Panduan", title: "Buku Panduan Pengajuan Kerja Sama Daerah Pemkab Tanah Laut", year: 2024 },
   { cat: "Panduan", title: "SOP Fasilitasi Kerja Sama Antar Daerah", year: 2023 },
-  { cat: "Studi Kasus", title: "Best Practice Sister City Yogyakarta - Kyoto", year: 2023 },
+  { cat: "Studi Kasus", title: "Best Practice Sister City Tanah Laut - Penang", year: 2023 },
   { cat: "Studi Kasus", title: "Implementasi Kerja Sama Smart City", year: 2024 },
 ];
 
@@ -17,7 +17,7 @@ const Pengetahuan = () => (
     <PageHeader
       eyebrow="Pengetahuan"
       title="Pengetahuan Kerja Sama Daerah"
-      description="Akses regulasi, panduan, dan studi kasus kerja sama daerah Pemerintah Kota Yogyakarta."
+      description="Akses regulasi, panduan, dan studi kasus kerja sama daerah Pemerintah Kabupaten Tanah Laut."
     />
 
     <section className="container py-16">

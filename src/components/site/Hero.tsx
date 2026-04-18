@@ -24,7 +24,7 @@ export const Hero = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-xs font-bold tracking-widest uppercase mb-6 border border-white/20">
             <Sparkles className="h-3.5 w-3.5 text-secondary" />
-            Pemerintah Kota Yogyakarta
+            Pemerintah Kabupaten Tanah Laut
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] text-balance">
             Fasilitasi & Pengelolaan{" "}
@@ -34,7 +34,7 @@ export const Hero = () => {
           <div className="h-1.5 w-24 bg-gold-gradient rounded-full my-6" />
           <p className="text-lg opacity-90 max-w-xl leading-relaxed">
             Media digital tunggal untuk mengelola fasilitasi dan pengelolaan pengetahuan kerja sama daerah di
-            Pemerintah Kota Yogyakarta — cepat, transparan, dan terintegrasi.
+            Pemerintah Kabupaten Tanah Laut — cepat, transparan, dan terintegrasi.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Button variant="hero" size="lg">

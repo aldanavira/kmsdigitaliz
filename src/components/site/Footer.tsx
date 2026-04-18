@@ -11,12 +11,12 @@ export const Footer = () => {
             <img src={logo} alt="Logo" className="h-14 w-14" width={56} height={56} loading="lazy" />
             <div>
               <div className="font-display font-extrabold">Bagian Perekonomian dan Kerja Sama</div>
-              <div className="text-sm opacity-80">Pemerintah Kota Yogyakarta</div>
+              <div className="text-sm opacity-80">Pemerintah Kabupaten Tanah Laut</div>
             </div>
           </div>
           <p className="text-sm opacity-80 max-w-md leading-relaxed">
             Media digital tunggal untuk mengelola fasilitasi dan pengelolaan pengetahuan kerja sama daerah di
-            Pemerintah Kota Yogyakarta.
+            Pemerintah Kabupaten Tanah Laut.
           </p>
           <div className="flex gap-3 mt-6">
             {[Facebook, Instagram, Youtube].map((Icon, i) => (
@@ -45,16 +45,16 @@ export const Footer = () => {
         <div>
           <h4 className="font-display font-bold mb-4 text-secondary">Kontak</h4>
           <ul className="space-y-3 text-sm opacity-90">
-            <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> Komplek Balaikota, Jl. Kenari No.56, Yogyakarta</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> (0274) 515865</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> kerjasama@jogjakota.go.id</li>
+            <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> Komplek Perkantoran Pemkab, Jl. A. Yani Km. 1, Pelaihari, Tanah Laut</li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> (0512) 21001</li>
+            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-secondary" /> kerjasama@tanahlautkab.go.id</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="container py-5 text-center text-xs opacity-70">
-          © {new Date().getFullYear()} Pemerintah Kota Yogyakarta. Semua hak cipta dilindungi.
+          © {new Date().getFullYear()} Pemerintah Kabupaten Tanah Laut. Semua hak cipta dilindungi.
         </div>
       </div>
     </footer>
