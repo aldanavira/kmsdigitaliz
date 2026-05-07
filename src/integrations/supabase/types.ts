@@ -16,42 +16,72 @@ export type Database = {
     Tables: {
       pengajuan: {
         Row: {
+          aktivitas: string | null
+          analisis_manfaat_biaya: string | null
           catatan_admin: string | null
           created_at: string
+          dasar_hukum: string | null
           email: string
           id: string
+          jangka_waktu: string | null
           jenis_instansi: string
           judul: string
+          kesimpulan: string | null
+          kontak: string | null
+          latar_belakang: string | null
           nama_instansi: string
+          objek_kerjasama: string | null
           penanggung_jawab: string
+          proposal_url: string | null
+          ruang_lingkup: string | null
           status: Database["public"]["Enums"]["submission_status"]
           tujuan: string
           updated_at: string
           user_id: string
         }
         Insert: {
+          aktivitas?: string | null
+          analisis_manfaat_biaya?: string | null
           catatan_admin?: string | null
           created_at?: string
+          dasar_hukum?: string | null
           email: string
           id?: string
+          jangka_waktu?: string | null
           jenis_instansi: string
           judul: string
+          kesimpulan?: string | null
+          kontak?: string | null
+          latar_belakang?: string | null
           nama_instansi: string
+          objek_kerjasama?: string | null
           penanggung_jawab: string
+          proposal_url?: string | null
+          ruang_lingkup?: string | null
           status?: Database["public"]["Enums"]["submission_status"]
           tujuan: string
           updated_at?: string
           user_id: string
         }
         Update: {
+          aktivitas?: string | null
+          analisis_manfaat_biaya?: string | null
           catatan_admin?: string | null
           created_at?: string
+          dasar_hukum?: string | null
           email?: string
           id?: string
+          jangka_waktu?: string | null
           jenis_instansi?: string
           judul?: string
+          kesimpulan?: string | null
+          kontak?: string | null
+          latar_belakang?: string | null
           nama_instansi?: string
+          objek_kerjasama?: string | null
           penanggung_jawab?: string
+          proposal_url?: string | null
+          ruang_lingkup?: string | null
           status?: Database["public"]["Enums"]["submission_status"]
           tujuan?: string
           updated_at?: string
