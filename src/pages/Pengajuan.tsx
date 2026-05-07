@@ -99,11 +99,8 @@ const Pengajuan = () => {
         if (upErr) throw upErr;
         proposal_url = path;
       }
-      const { error } = await supabase.from("pengajuan").insert({
-        ...parsed.data,
-        user_id: user.id,
-        proposal_url,
-      });
+      const payload = { ...parsed.data, user_id: user.id, proposal_url };
+      const { error } = await supabase.from("pengajuan").insert(payload as any);
       if (error) throw error;
       toast.success("Pengajuan berhasil dikirim");
       setForm({ ...initialForm, email: user.email ?? "" });
